@@ -1,0 +1,122 @@
+/* ===================================
+   CONTAINER PRINCIPAL
+   Centraliza conteúdo com largura máxima
+====================================== */
+.page-container {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+/* ===================================
+   CAMPO DE BUSCA
+   Wrapper flex para alinhar o input à direita
+====================================== */
+.search-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 1.2rem;
+}
+
+/* Input de busca estilizado */
+.search-input {
+    width: 280px;
+    padding: 10px 14px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    outline: none;
+    transition: all 0.2s ease;
+    background-color: #fafafa;
+}
+
+.search-input::placeholder {
+    color: #888;
+}
+
+/* Estado de foco com borda e sombra azul */
+.search-input:focus {
+    border-color: #1e88e5;
+    box-shadow: 0 0 4px rgba(30, 136, 229, 0.4);
+}
+
+/* ===================================
+   LISTA DE PRODUTOS
+   Flex container para cards com espaçamento
+====================================== */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: flex-start;
+}
+
+/* ===================================
+   CARD DO PRODUTO
+   Estilo geral, sombra e layout flexível
+====================================== */
+.product-card {
+    background-color: #f5f5f5;
+    flex: 1 1 300px; /* cresce, encolhe, base 300px */
+    max-width: 320px;
+    padding: 24px;
+    border-radius: 18px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+/* Espaçamento interno dos itens do card */
+.product-card__item {
+    padding: 8px 0;
+}
+
+/* Nome do produto: maior e em destaque */
+.product-card__name {
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    color: #222;
+}
+
+/* Preço: destacado mas menor que o nome */
+.product-card__price {
+    font-size: 1rem;
+    font-weight: 600;
+    color: #1b5e20;
+    margin-bottom: 0.4rem;
+}
+
+/* Estoque: menor e com alinhamento flexível */
+.product-card__stock {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #555;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+/* ===================================
+   BADGES DE STOCK
+   Cores para status de estoque
+====================================== */
+.stock-badge {
+    padding: 2px 6px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: 600;
+    font-size: 0.85rem;
+}
+
+.stock--active {
+    background-color: #28a745; /* verde */
+}
+
+.stock--partial {
+    background-color: #ff9800; /* laranja */
+}
+
+.stock--blocked {
+    background-color: #e53935; /* vermelho */
+}

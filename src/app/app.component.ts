@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'angular-pipes';
+  search: string = '';
+  products = [
+  { name: 'Mouse Gamer', price: 120, category: 'Periférico', stock: 16},
+  { name: 'Teclado Mecânico', price: 350, category: 'Periférico', stock: 0 },
+  { name: 'Monitor 27"', price: 1400, category: 'Tela', stock: 7 },
+  { name: 'Cadeira Gamer', price: 900, category: 'Mobiliário', stock: 20 },
+];
+
 }
